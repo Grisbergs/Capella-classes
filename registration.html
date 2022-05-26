@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main_4.css" />
+    <script type ="text/javascript" src="js/JavaScript_05.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form id ="regForm" action= "confirmation.php" method="get">
+            
+            <label id = "userNamelb" for="userName">Username:</label>
+            <span id="userReq">***Required Field****</span>
+            <span id="userVal">***Letters and Numbers Only***</span>
+            <input id = "userName" type="text" name="userName" placeholder="Enter your Username" required/>
+
+            <label id = "password1lb" for="Password">Password:
+            </label>
+            <span id="passReq">***Required Field****</span>
+            <span id="passVal">***Passwords must Match and Be 8 Characters***</span>
+            <input id = "password1" type="password" name="password" placeholder="Enter your Password" />
+
+            <label id = "password2lb"for="passwordVerify">Verify your Password:
+            </label>
+             <span id="pass2Req">***Required Field****</span>
+            <span id="pass2Val">***Passwords must Match and Be 8 Characters***</span>
+            <input id = "password2" type="password" name="passwordVerify" placeholder="Enter in your Password again" />
+
+            <label id = "firstNamelb" for="firstName">First Name:
+            </label>
+              <span id="firstReq">***Required Field****</span>
+            <span id="firstVal">*****MUST BE TEXT*****</span>
+            <input id = "firstName" type="text" name="firstName" placeholder="Enter your First Name" />
+
+            <label id= "lastNamelb" for="lastName">Last Name:
+            </label>
+             <span id="lastReq">***Required Field****</span>
+            <span id="lastVal">*****MUST BE TEXT*****</span>
+            <input id= "lastName" type="text" name="lastName" placeholder="Enter your Last Name" />
+            <label  id= "emaillb" for="email">Email:
+            </label>
+            <span id ="emailError">***Must be in xxx@xxx.xxx Format***</span>
+            <input id= "email" type="text" name="email" placeholder="Enter your Email Address" />
+			<label id = "phonelb" for="phoneNumber">Phone Number:
+            </label>
+              <span id ="phoneError">***Must be in  (xxx) xxx-xxxx Format***</span> 
+            <input id = "phone" type="text" name="phone" placeholder="Enter your Phone Number" />
+             
+			<label for="signUpNewsletter">Sign up for newsletter:
+            </label>
+			  <input type="radio"  name="signUpNewsletter" value="Yes" checked> Yes 
+				<input type="radio" name="signUpNewsletter" value="No"> No
+            <input id="regButton" type="button" value="Next step" onclick="valRegForm() ">
+        </form>
+    </section>
+    <button onclick="setCookies()">cookie TEST</button>
+
+    <footer>This events site is for IT-FP3215 tasks.
+    </footer>
+</body>
+
+</html>
+
+ 

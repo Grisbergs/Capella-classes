@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main_3.css" />
+<script type ="text/javascript" src="js/JavaScript_04.js">
+ 
+</script>
+</head>
+<!-- adding function to return stored variables to the message -->
+<body >
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html" class="active">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <!-- add area for Invitee number -->
+        <form id="inviteeForm">
+            <label for="invinIter">Number of volunteers to enroll (Max 10):</label>
+        <input type="text" id= "invinIter"   title ="Max 10 entries" placeholder =""  onkeypress="enterPress()" >
+        </form>
+        <!-- Adding JS function to grab all form values-->
+        <form  id= "invForm" name = "invForm"   >
+            </form>
+
+        <form> 
+        <input id="invinButton" type="button" onclick= "messageLp()" value="Submit">
+        </form>
+    </section>
+<!--add button to allow to restart process --> 
+ <button id="restartButton" onClick="window.location.reload();">Start Over</button>
+    
+    <article id="placeholderContent">
+        Hello <span id="recipientName">recipientName</span>!
+        <br/>
+        <br/> You have been invited to volunteer for an event held by <span id="organizationName">organizationName</span> on <span id="eventDate">eventDate</span>. Please come to the following website: <span id="websiteURL">websiteURL</span> to sign up as a volunteer.
+        <br/>
+        <br/> Thanks!
+        <br/>
+        <br/>
+        <span id="hostName">hostName</span>
+       
+    </article>
+    
+    <footer id = "foot">This events site is for IT-FP3215 tasks.
+    </footer>
+</body>
+
+</html>
